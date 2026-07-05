@@ -1,9 +1,9 @@
-FROM openjdk:21
+FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
 
-COPY Hello.java .
+COPY HelloWorld.java .
 
-RUN javac Hello.java
+RUN javac HelloWorld.java
 
-CMD ["java","Hello"]
+CMD ["java", "HelloWorld"]
